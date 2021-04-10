@@ -1,2 +1,36 @@
 # CS60075-Team-11-Task-1
-Lexical Complexity Prediction Shared Task
+
+Lexical Complexity Prediction Shared Task Codes for Team 11
+
+## Installation and running
+
+* Requirements - Python 3, Cuda
+
+* All the below commands are for a Linux system. We have tested our code on a Linux system.
+
+* Create a virtual environment (Highly recommended)
+
+```sh
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install --upgrade pip
+```
+
+Note: Ensure pip is updated in the virtual enviroment. Some dependencies require the latest version of pip
+
+* Basic Requirements
+
+```sh
+    pip install -r requirements.txt
+```
+
+* GloVE Embeddings
+
+```sh
+    wget http://nlp.stanford.edu/data/glove.6B.zip
+    unzip glove*.zip
+```
+
+## Trained Models
+
+* We saved certain models during training (such as biLSTM for context probability prediction), to help reduce training the same models while experimenting. These models are available in the [TrainedModels](./TrainedModels) subdirectory.
