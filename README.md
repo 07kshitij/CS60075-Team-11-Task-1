@@ -45,4 +45,4 @@ Lexical Complexity Prediction Shared Task Codes for Team 11
 
 ## Experiments
 
-* Transformer Models and the Neighbourhood Aggregate Model with the Google Colab links are located in the Experiments folder
+* Transformer Models and the Neighbourhood Aggregate Model with the Google Colab links are located in the [Experiments](./Experiments) folder
