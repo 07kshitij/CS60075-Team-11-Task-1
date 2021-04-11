@@ -4,11 +4,11 @@ Lexical Complexity Prediction Shared Task Codes for Team 11
 
 ## Installation and running
 
-* Requirements - Python 3, Cuda
+* Requirements - Python 3.6, Cuda
 
-* All the below commands are for a Linux system. We have tested our code on a Linux system.
+* All the below commands are for a Linux system
 
-* Create a virtual environment (Highly recommended)
+* Create a virtual environment (Highly recommended to prevent dependency conflicts)
 
 ```sh
     python3 -m venv venv
@@ -16,7 +16,7 @@ Lexical Complexity Prediction Shared Task Codes for Team 11
     pip install --upgrade pip
 ```
 
-Note: Ensure pip is updated in the virtual enviroment. Some dependencies require the latest version of pip
+**Note**: Ensure pip is updated in the virtual enviroment. Some dependencies require the latest version of pip
 
 * Basic Requirements
 
@@ -31,6 +31,14 @@ Note: Ensure pip is updated in the virtual enviroment. Some dependencies require
     unzip glove*.zip
 ```
 
+* Running the code
+
+```sh
+    python lcp_shared_task_overall_model.py
+```
+
 ## Trained Models
 
 * We saved certain models during training (such as biLSTM for context probability prediction), to help reduce training the same models while experimenting. These models are available in the [TrainedModels](./TrainedModels) subdirectory.
+
+* These trained and saved models are used while running the overall model script
