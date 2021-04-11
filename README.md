@@ -4,7 +4,7 @@ Lexical Complexity Prediction Shared Task Codes for Team 11
 
 ## Installation and running
 
-* Requirements - Python 3.6, Cuda
+* Requirements - **Python 3.6** (Tested in this environment)
 
 * All the below commands are for a Linux system
 
@@ -16,7 +16,7 @@ Lexical Complexity Prediction Shared Task Codes for Team 11
     pip install --upgrade pip
 ```
 
-**Note**: Ensure pip is updated in the virtual enviroment. Some dependencies require the latest version of pip
+**Note**: Ensure pip is updated in the virtual enviroment by executing the last command above. Some dependencies require the latest version of pip
 
 * Basic Requirements
 
