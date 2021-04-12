@@ -20,6 +20,18 @@ from Models.NeuralNet import NN
 from Models.LinearRegression import LinearRegressor
 from Models.SVR import SupportVectorRegressor
 
+import sys
+
+USE_SAVED_MODELS = 1
+
+if len(sys.argv) > 1:
+  USE_SAVED_MODELS = int(sys.argv[1])
+
+if not USE_SAVED_MODELS:
+  print('\n +++ Training all models from scratch +++ \n')
+else:
+  print('\n +++ Using saved models from TrainedModels/ +++ \n')
+
 # Seed all rngs for deterministic results
 seed_all(0)
 
@@ -116,7 +128,7 @@ model = biLSTM(EMBEDDING_DIM, HIDDEN_DIM, len(word_to_ix), len(word_to_ix))
 # To use the saved model, change the False in next cell to True
 path_biLSTM_single = './TrainedModels/biLSTM.pt'
 
-USE_PRETRAINED_SINGLE_WORD_TARGET_MODEL = True
+USE_PRETRAINED_SINGLE_WORD_TARGET_MODEL = USE_SAVED_MODELS
 
 if USE_PRETRAINED_SINGLE_WORD_TARGET_MODEL:
   print('Using pre-trained biLSTM on single target expressions')
@@ -147,7 +159,7 @@ model_multi = biLSTM(EMBEDDING_DIM, HIDDEN_DIM, len(word_to_ix_multi), len(word_
 # To use the saved model, change the False in next cell to True
 path_biLSTM_multi = './TrainedModels/biLSTM_multi.pt'
 
-USE_PRETRAINED_MULTI_WORD_TARGET_MODEL = True
+USE_PRETRAINED_MULTI_WORD_TARGET_MODEL = USE_SAVED_MODELS
 
 if USE_PRETRAINED_MULTI_WORD_TARGET_MODEL:
   print('Using pre-trained biLSTM on multi target expressions')
@@ -226,7 +238,7 @@ model_NN.to(device)
 # To use the saved model, change the False in next cell to True
 path_NN = './TrainedModels/NN_0.731.pt'
 
-USE_PRETRAINED_SINGLE_WORD_TARGET_NN = True
+USE_PRETRAINED_SINGLE_WORD_TARGET_NN = USE_SAVED_MODELS
 
 if USE_PRETRAINED_SINGLE_WORD_TARGET_NN:
   print('\n +++ Using pre-trained NN on single target expressions +++')
@@ -261,7 +273,7 @@ model_NN_multi.to(device)
 # To use the saved model, change the False in next cell to True
 path_NN_multi = './TrainedModels/NN_multi_0.775.pt'
 
-USE_PRETRAINED_MULTI_WORD_TARGET_NN = True
+USE_PRETRAINED_MULTI_WORD_TARGET_NN = USE_SAVED_MODELS
 
 if USE_PRETRAINED_MULTI_WORD_TARGET_NN:
   print('\n +++ Using pre-trained NN on multi target expressions +++')
