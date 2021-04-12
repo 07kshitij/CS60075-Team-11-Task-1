@@ -9,6 +9,6 @@ Links to the Google Colab notebooks for the Transformer models and other Experim
 * [BERT Sentence Transformers + NN](https://colab.research.google.com/drive/1ERN7Tr7qNpyNmyBZ6dLRtK7Pwvkgkrm4?usp=sharing)
 * [BERT Attention Scores + NN](https://colab.research.google.com/drive/19EoQaR8x4VPIvFyzA6dH7j58LIFykCF_?usp=sharing)
 * [Linguistic Features](https://colab.research.google.com/drive/1BqHujGmsumZqkKLE4zdPemUy-zE0oKsu?usp=sharing)
-* [Neighbourhood Aggragation](https://colab.research.google.com/drive/1mxZ3EAyMa7GBFWmYRVOJ5CAsOMAdEwYh?usp=sharing)
+* [Neighbourhood Aggregation](https://colab.research.google.com/drive/1mxZ3EAyMa7GBFWmYRVOJ5CAsOMAdEwYh?usp=sharing)
 
 These codes (Transformer Models) take a significant amount of time to run (in the order of hours)
